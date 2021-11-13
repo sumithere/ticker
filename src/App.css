@@ -1,5 +1,15 @@
+
 .App {
-  text-align: center;
+  /* text-align: left; */
+  display:flex;
+  position:relative;
+  left:5rem;
+  top:5rem;
+  /* flex-direction:row; */
+  background-color: #282c34;
+  color:white;
+  height:8rem;
+  width:30rem;
 }
 
 .App-logo {
@@ -35,4 +45,55 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.leftBox{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  text-align: left;
+  width:12.5rem;
+  height:100%;
+}
+.rightBox{
+  padding-right: 10px;
+  width:12.5rem;
+  text-align: right;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  height:100%;
+}
+.bitcoinWrap{
+  width:5rem;
+  height:8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bitcoin{
+  /* height:100%; */
+}
+.wrap{
+  padding-top: 20px;
+  padding-bottom: 16px;
+}
+#circle {
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 15px;
+  /* background: rgb(240, 3, 3); */
+  position:relative;
+  left:5rem;
+  top:2rem;
+}
+.selected{
+  background-color: green;
+
+}
+.notSelected{
+  background-color: red;
 }
